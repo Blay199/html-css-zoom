@@ -16,6 +16,10 @@ ul, ol, menu {
     list-style: none;
 }
 
+button {
+    border: none;
+}
+
 body {
     height: 100vh;
     background-color: black;
@@ -32,7 +36,6 @@ body {
 
 .toolbar {
     background-color: #222222;
-    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,3 +85,35 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.toolbar .tools {
+    display: flex;
+}
+
+.toolbar .tools .button {
+    padding: 12px;
+    display: flex;
+    gap: 14px;
+    align-items: center ;
+}
+
+.icon-name {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+}
+
+.icon-name i {
+    font-size: 24px;
+}
+
+.arrow {
+    font-size: 12px;
+}
+
+.close-call {
+    background-color: #4a4a4a;
+    color: red;
+    padding: 0 24px;
+    align-self: stretch;
+}
