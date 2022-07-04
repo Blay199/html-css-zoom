@@ -1,0 +1,84 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-space {
+    padding: 70px 50px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.toolbar {
+    background-color: #222222;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 6px;  
+}
+
+.icon-wrapper .icons {
+    border-radius: 5px;
+    line-height: 25px;
+    padding: 0 4px;
+    background-color: #4a4a4a;
+    font-size: 14px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.card-wrapper img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cards {
+    aspect-ratio: 16/9;
+    flex-basis: 240px;
+    position: relative;
+}
+
+.cards .cards-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
